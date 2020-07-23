@@ -87,10 +87,10 @@ function updateResult(){
     result.innerHTML = "You are KIND. Generous and compassionate, you are just full of goodness, without people like you, the world would be hopeless. Just remember to take care of yourself too; you matter:)";
   } 
   else if (chillScore >= 2){
-    result.innerHTML = "You are CHILL. Calm and lowkey shy, you like to follow trends ";
+    result.innerHTML = "You are CHILL. Calm and secretly shy, you like to follow tren";
   } 
   else if (straightforwardScore >= 2){
-    result.innerHTML = "You are STRAIGHTFORWARD. ";
+    result.innerHTML = "You are STRAIGHTFORWARD. Bold and ";
   } 
   else{
     result.innerHTML = "There is a tie in your results. You are divergent. Restart?";
