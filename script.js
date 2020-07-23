@@ -50,28 +50,28 @@ q3a4.addEventListener("click", straightforward);
 function fun(){
   funScore += 1;
   questionCount += 1;
-  if (questionCount >= 3){
+  if (questionCount == 3){
     updateResult();
   }
 }
 function kind(){
   kindScore += 1;
   questionCount += 1;
-  if (questionCount >= 3){
+  if (questionCount == 3){
     updateResult();
   }
 }
 function straightforward(){
   straightforwardScore += 1;
   questionCount += 1;
-  if (questionCount >= 3){
+  if (questionCount == 3){
     updateResult();
   }
 }
 function chill(){
   chillScore += 1;
   questionCount += 1;
-  if (questionCount >= 3){
+  if (questionCount == 3){
     updateResult();
   }
 }
