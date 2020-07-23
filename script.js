@@ -22,7 +22,10 @@ var q1a4 = document.getElementById("q1a4");
 
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", result1);
+q1a1.addEventListener("click", chillScore);
+q1a2.addEventListener("click", straightforwardScore);
+q1a3.addEventListener("click", funScore);
+q1a4.addEventListener("click", kindScore);
 
 
 
