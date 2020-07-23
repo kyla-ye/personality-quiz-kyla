@@ -27,6 +27,7 @@ var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 
+var result = document.getElementById("result");
 
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", chill);
@@ -46,50 +47,51 @@ q3a4.addEventListener("click", straightforward);
 
 
 //#TODO: Define quiz functions here
-function fun() {
+function fun(){
   funScore += 1;
   questionCount += 1;
   alert("F");
-  if (questionCount >= 3) {
+  if (questionCount >= 3){
     updateResult();
   }
 }
-function kind() {
+function kind(){
   kindScore += 1;
   questionCount += 1;
-  if (questionCount >= 3) {
+  if (questionCount >= 3){
     updateResult();
   }
 }
-function straightforward() {
+function straightforward(){
   straightforwardScore += 1;
   questionCount += 1;
-  if (questionCount >= 3) {
+  if (questionCount >= 3){
     updateResult();
   }
 }
-function chill() {
+function chill(){
   chillScore += 1;
   questionCount += 1;
-  if (questionCount >= 3) {
+  if (questionCount >= 3){
     updateResult();
   }
 }
-var result = document.getElementById("result");
-function updateResult() {
+
+
+function updateResult(){
   if (funScore >= 2){
     result.innerHTML = “You are FUN. The life of the party, you bring light to the places you go and smiles to the people you know. Just remember not to get too carried away, and stay safe and responsible:)”;
   } 
-  else if (kindScore >= 2) {
+  else if (kindScore >= 2){
     result.innerHTML = “You are KIND. Generous and compassionate, you are just full of goodness, without people like you, the world would be hopeless. Just remember to take care of yourself too; you matter:)”;
   } 
-  else if (chillScore >= 2) {
+  else if (chillScore >= 2){
     result.innerHTML = “You are CHILL. ”;
   } 
-  else if (straightforwardScore >= 2) {
+  else if (straightforwardScore >= 2){
     result.innerHTML = “You are STRAIGHTFORWARD. ”;
   } 
-  else {
+  else{
     result.innerHTML = “you are a mix of results”;
   }
 }
