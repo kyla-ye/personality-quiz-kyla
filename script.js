@@ -80,10 +80,10 @@ function updateResult() {
     result.innerHTML = “You are FUN. The life of the party, you bring light to the places you go and smiles to the people you know. Just remember not to get too carried away, and stay safe and responsible:)”;
   } 
   else if (kindScore >= 2) {
-    result.innerHTML = “You are KIND. Generous and compassionate ”;
+    result.innerHTML = “You are KIND. Generous and compassionate, you are just full of goodness, without people like you, the world would be hopeless. Just remember to take care of yourself too; you matter:)”;
   } 
   else if (chillScore >= 2) {
-    result.innerHTML = “result3”;
+    result.innerHTML = “You are CHILL. ”;
   } 
   else if (straightforwardScore >= 2) {
     result.innerHTML = “result4”;
@@ -104,3 +104,17 @@ q1a1.addEventListener("click", disableQ1);
 q1a2.addEventListener("click", disableQ1);
 q1a3.addEventListener("click", disableQ1);
 q1a4.addEventListener("click", disableQ1);
+
+var restart = document.getElementById("restart");
+restart.addEventListener("click", restartQuiz);
+
+function restartQuiz() {
+  result.innerHTML = "Your result is...";
+  questionCount = 0;
+  dogScore = 0;
+  catScore = 0;
+  hamsterScore = 0;
+  fishScore = 0;
+  window.scrollTo(500, 0);
+  enableQuestions();
+}
