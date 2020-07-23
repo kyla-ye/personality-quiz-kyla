@@ -90,7 +90,7 @@ function updateResult(){
     result.innerHTML = "You are CHILL. Calm and secretly shy, you like to follow tren";
   } 
   else if (straightforwardScore >= 2){
-    result.innerHTML = "You are STRAIGHTFORWARD. Bold and ";
+    result.innerHTML = "You are STRAIGHTFORWARD. Bold and ambitious, you aren't afraid to speak what's on your mind and your friends can always count on you to never lie' ";
   } 
   else{
     result.innerHTML = "There is a tie in your results. You are divergent. Restart?";
