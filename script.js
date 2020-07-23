@@ -27,9 +27,10 @@ var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 
-//
+//This creates a variable for the result using the DOM.
 var result = document.getElementById("result");
 
+//This creates a variable for the restart button using the DOM.
 var restart = document.getElementById("restart");
 
 //#TODO: Add Event Listeners to your answer choice variables.
@@ -79,7 +80,6 @@ function chill(){
   }
 }
 
-
 function updateResult(){
   if (funScore >= 2){
     result.innerHTML = "You are FUN. The life of the party, you bring light to the places you go and smiles to the people you know. Just remember not to get too carried away, and stay safe and responsible:)";
@@ -98,7 +98,7 @@ function updateResult(){
   }
 }
 
-
+//This adds Event Listeners to my answer choice variables so I can disable them after the user clicks on them.
 q1a1.addEventListener("click", disableQ1);
 q1a2.addEventListener("click", disableQ1);
 q1a3.addEventListener("click", disableQ1);
@@ -114,6 +114,7 @@ q3a2.addEventListener("click", disableQ3);
 q3a3.addEventListener("click", disableQ3);
 q3a4.addEventListener("click", disableQ3);
 
+//These functions disable the answer choices after the user clicks on them.
 function disableQ1(){
   q1a1.disabled = true;
   q1a2.disabled = true;
@@ -133,8 +134,10 @@ function disableQ3(){
   q3a4.disabled = true;
 }
 
+//This adds an Event Listener to my restart button so the quiz will restart when the user clicks on it.
 restart.addEventListener("click", restartQuiz);
 
+//This function restarts my quiz when the user clicks the restart button.
 function restartQuiz(){
   questionCount = 0;
   funScore = 0;
@@ -145,6 +148,7 @@ function restartQuiz(){
   enableQuestions();
 }
 
+//This functions enables all the answer choices for when the user clicks the restart button.
 function enableQuestions(){
   q1a1.disabled = false;
   q1a2.disabled = false;
