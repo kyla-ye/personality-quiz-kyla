@@ -80,10 +80,10 @@ function chill(){
 
 function updateResult(){
   if (funScore >= 2){
-    result.innerHTML = “You are FUN. The life of the party, you bring light to the places you go and smiles to the people you know. Just remember not to get too carried away, and stay safe and responsible:)”;
+    result.innerHTML = "You are FUN. The life of the party, you bring light to the places you go and smiles to the people you know. Just remember not to get too carried away, and stay safe and responsible:)";
   } 
   else if (kindScore >= 2){
-    result.innerHTML = “You are KIND. Generous and compassionate, you are just full of goodness, without people like you, the world would be hopeless. Just remember to take care of yourself too; you matter:)”;
+    result.innerHTML = "You are KIND. Generous and compassionate, you are just full of goodness, without people like you, the world would be hopeless. Just remember to take care of yourself too; you matter:)”;
   } 
   else if (chillScore >= 2){
     result.innerHTML = “You are CHILL. ”;
@@ -92,7 +92,7 @@ function updateResult(){
     result.innerHTML = “You are STRAIGHTFORWARD. ”;
   } 
   else{
-    result.innerHTML = “you are a mix of results”;
+    result.innerHTML = “There is a tie in your results. You are divergent. Refresh the page and try again?”;
   }
 }
 
