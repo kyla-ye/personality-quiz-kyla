@@ -86,7 +86,7 @@ function updateResult() {
     result.innerHTML = “You are CHILL. ”;
   } 
   else if (straightforwardScore >= 2) {
-    result.innerHTML = “result4”;
+    result.innerHTML = “You are STRAIGHTFORWARD. ”;
   } 
   else {
     result.innerHTML = “you are a mix of results”;
