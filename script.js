@@ -27,6 +27,7 @@ var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 
+//
 var result = document.getElementById("result");
 
 var restart = document.getElementById("restart");
