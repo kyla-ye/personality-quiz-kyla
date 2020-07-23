@@ -22,10 +22,10 @@ var q1a4 = document.getElementById("q1a4");
 
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", chillScore);
-q1a2.addEventListener("click", straightforwardScore);
-q1a3.addEventListener("click", funScore);
-q1a4.addEventListener("click", kindScore);
+q1a1.addEventListener("click", chill);
+q1a2.addEventListener("click", straightforward);
+q1a3.addEventListener("click", fun);
+q1a4.addEventListener("click", kind);
 
 
 
@@ -34,8 +34,19 @@ q1a4.addEventListener("click", kindScore);
 
 
 //#TODO: Define quiz functions here
-function result1(){
-  
-  
-  
+function fun() {
+  funScore += 1;
+  questionCount += 1;
+}
+function kind() {
+  kindScore += 1;
+  questionCount += 1;
+}
+function straightforward() {
+  straightforwardScore += 1;
+  questionCount += 1;
+}
+function chill() {
+  chillScore += 1;
+  questionCount += 1;
 }
