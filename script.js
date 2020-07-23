@@ -84,13 +84,13 @@ function updateResult(){
     result.innerHTML = "You are FUN. The life of the party, you bring light to the places you go and smiles to the people you know. Just remember not to get too carried away, and stay safe and responsible:)";
   } 
   else if (kindScore >= 2){
-    result.innerHTML = "You are KIND. Generous and compassionate, you are just full of goodness, without people like you, the world would be hopeless. Just remember to take care of yourself too; you matter:)";
+    result.innerHTML = "You are KIND. Generous and compassionate, you are just full of goodness, and without people like you, the world would be hopeless. Just remember to take care of yourself too; you matter:)";
   } 
   else if (chillScore >= 2){
     result.innerHTML = "You are CHILL. Lowkey cute and funny, you are up-to-date on trends but mostly only bold around your friends. Just remember to be the true you too; you're great:)";
   } 
   else if (straightforwardScore >= 2){
-    result.innerHTML = "You are STRAIGHTFORWARD. Bold and ambitious, you speak what's on your mind, and when it comes to food in your friend's teeth, you won't lie. Just remember to sometimes lose the battle and win the war:)";
+    result.innerHTML = "You are STRAIGHTFORWARD. Headstrong and ambitious, you speak what's on your mind, and when it comes to food in your friend's teeth, you won't lie. Just remember to sometimes lose the battle and win the war:)";
   } 
   else{
     result.innerHTML = "There is a tie in your results. You are divergent. Restart?";
