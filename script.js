@@ -29,6 +29,8 @@ var q3a4 = document.getElementById("q3a4");
 
 var result = document.getElementById("result");
 
+var restart = document.getElementById("restart");
+
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", chill);
 q1a2.addEventListener("click", straightforward);
@@ -91,7 +93,7 @@ function updateResult(){
     result.innerHTML = "You are STRAIGHTFORWARD. ";
   } 
   else{
-    result.innerHTML = "There is a tie in your results. You are divergent. Refresh the page and try again?";
+    result.innerHTML = "There is a tie in your results. You are divergent. Restart?";
   }
 }
 
@@ -130,3 +132,29 @@ function disableQ3(){
   q3a4.disabled = true;
 }
 
+restart.addEventListener("click", restartQuiz);
+
+function restartQuiz(){
+  questionCount = 0;
+  funScore = 0;
+  kindScore = 0;
+  straightforwardScore= 0;
+  chillScore= 0;
+  window.scrollTo(0, 0);
+  enableQuestions();
+}
+
+function enableQuestions(){
+  q1a1.disabled = false;
+  q1a2.disabled = false;
+  q1a3.disabled = false;
+  q1a4.disabled = false;
+  q2a1.disabled = false;
+  q2a2.disabled = false;
+  q2a3.disabled = false;
+  q2a4.disabled = false;
+  q3a1.disabled = false;
+  q3a2.disabled = false;
+  q3a3.disabled = false;
+  q3a4.disabled = false;
+}
