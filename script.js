@@ -49,6 +49,7 @@ q3a4.addEventListener("click", straightforward);
 function fun() {
   funScore += 1;
   questionCount += 1;
+  alert("F");
   if (questionCount >= 3) {
     updateResult();
   }
