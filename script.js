@@ -74,18 +74,33 @@ function chill() {
     updateResult();
   }
 }
+var result = document.getElementById("result");
 function updateResult() {
-  if (score1 >= 2){
-    result.innerHTML = “result1”;
-  } else if (score2 >= 2){
-    result.innerHTML = “result2”;
-  } else if (score3 >= 2){
+  if (funScore >= 2){
+    result.innerHTML = “You are FUN. The life of the party, you bring light to the places you go and smiles to the people you know. Just remember not to get too carried away, and stay safe and responsible:)”;
+  } 
+  else if (kindScore >= 2) {
+    result.innerHTML = “You are KIND. Generous and compassionate ”;
+  } 
+  else if (chillScore >= 2) {
     result.innerHTML = “result3”;
-  } else if (score4 >= 2){
+  } 
+  else if (straightforwardScore >= 2) {
     result.innerHTML = “result4”;
-  } else {
+  } 
+  else {
     result.innerHTML = “you are a mix of results”;
   }
 }
 
+function disableQ1() {
+  q1a1.disabled = true;
+  q1a2.disabled = true;
+  q1a3.disabled = true;
+  q1a4.disabled = true;
 }
+
+q1a1.addEventListener("click", disableQ1);
+q1a2.addEventListener("click", disableQ1);
+q1a3.addEventListener("click", disableQ1);
+q1a4.addEventListener("click", disableQ1);
