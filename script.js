@@ -27,10 +27,6 @@ var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 
-var q4a1 = document.getElementById("q4a1");
-var q4a2 = document.getElementById("q4a2");
-var q4a3 = document.getElementById("q4a3");
-var q4a4 = document.getElementById("q4a4");
 
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", chill);
@@ -43,8 +39,10 @@ q2a2.addEventListener("click", kind);
 q2a3.addEventListener("click", fun);
 q2a4.addEventListener("click", chill);
 
-
-
+q3a1.addEventListener("click", fun);
+q3a2.addEventListener("click", kind);
+q3a3.addEventListener("click", chill);
+q3a4.addEventListener("click", straightforward);
 
 
 //#TODO: Define quiz functions here
@@ -77,5 +75,17 @@ function chill() {
   }
 }
 function updateResult() {
-  if 
+  if (score1 >= 2){
+    result.innerHTML = “result1”;
+  } else if (score2 >= 2){
+    result.innerHTML = “result2”;
+  } else if (score3 >= 2){
+    result.innerHTML = “result3”;
+  } else if (score4 >= 2){
+    result.innerHTML = “result4”;
+  } else {
+    result.innerHTML = “you are a mix of results”;
+  }
+}
+
 }
